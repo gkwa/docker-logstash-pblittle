@@ -11,6 +11,8 @@ git clone https://github.com/TaylorMonacelli/docker-logstash-pblittle
 cd docker-logstash-pblittle
 git checkout --track origin/taylorconfig
 
+vagrant halt; vagrant destroy --force; vagrant up
+
 # Iterate whilte testing
 git pull
 time sh -x run-vagrant.sh
