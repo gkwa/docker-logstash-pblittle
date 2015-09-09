@@ -1,3 +1,26 @@
+# Reminder to taylor how to get this running
+
+I'm learning how this all works and I need emacs on this vagrant ubunutu
+guest _and_ in the docker instance within the vagrant ubunut guest.
+For production I wouldn't want emacs because I'd want to keep this as
+lightweight as possible, but while learning this, I need emacs.
+
+````
+# On PC or Mac
+git clone https://github.com/TaylorMonacelli/docker-logstash-pblittle
+cd docker-logstash-pblittle
+git checkout --track origin/taylorconfig
+
+# Iterate whilte testing
+git pull
+time sh -x run-vagrant.sh
+git pull
+time sh -x run-vagrant.sh
+git pull
+time sh -x run-vagrant.sh
+...
+````
+
 # Logstash Dockerfile
 
 This is a highly configurable [logstash][7] (1.4.5) image running [Elasticsearch][8] (1.7.0) and [Kibana][9] (3.1.2).

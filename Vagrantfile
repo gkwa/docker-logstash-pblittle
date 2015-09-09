@@ -17,6 +17,23 @@ apt-get update -qq
 apt-get install -q -y --force-yes lxc-docker
 usermod -a -G docker vagrant
 docker version
+
+# Taylor's crutch
+# Install emacs in ubuntu guest
+sudo -Hi curl -O https://raw.githubusercontent.com/TaylorMonacelli/docker-logstash-pblittle/taylorconfig/taylor-setup.sh
+sudo -Hi sh -x taylor-setup.sh
+
+# install tmuxinator in vagrant guest, but not docker gues
+sudo -Hi gem install tmuxinator
+
+# Create logstash docker instance:
+cd /vagrant
+make
+
+# Install emacs on docker logstash instance too
+docker exec logstash su --login --command 'curl -O https://raw.githubusercontent.com/TaylorMonacelli/docker-logstash-pblittle/taylorconfig/taylor-setup.sh'
+docker exec logstash su --login --command 'sh -x taylor-setup.sh'
+docker commit -m "Initial" logstash taylor/logstash:latest
 SCRIPT
 
 Vagrant.configure('2') do |config|
