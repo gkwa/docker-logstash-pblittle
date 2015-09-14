@@ -11,6 +11,30 @@ make
 /opt/logstash/conf.d
 ```
 
+apt-get install -y -qq ./nxlog-ce_2.9.1347_ubuntu_1404_amd64.deb
+# Last modified $Id$
+# $HeadURL$
+# -*- sh-mode -*-
+. ~/.alias
+. ~/.bash_profile
+ls -1 *.sh
+ls -1 *.deb
+dpkg -i nxlog-ce_2.9.1347_ubuntu_1404_amd64.deb
+dpkg -i nxlog-ce_2.9.1347_ubuntu_1404_amd64.deb  | grep 'is not installe' | awk '{print $3}'
+dpkg -i nxlog-ce_2.9.1347_ubuntu_1404_amd64.deb  | grep 'is not installe' 2>&1| awk '{print $3}'
+dpkg -i nxlog-ce_2.9.1347_ubuntu_1404_amd64.deb  | grep 'is not installe' 2>&1| awk '{print $4}'
+dpkg -i nxlog-ce_2.9.1347_ubuntu_1404_amd64.deb  2>&1 | grep 'is not installe' | awk '{print $4}'
+dpkg -i nxlog-ce_2.9.1347_ubuntu_1404_amd64.deb  2>&1 | grep 'is not installe' | awk '{print $2}'
+dpkg -i nxlog-ce_2.9.1347_ubuntu_1404_amd64.deb  2>&1 | grep 'is not installe' | awk '{print $2}' | xargs -n1 echo apt-get -y install
+apt-get -y install libapr1
+dpkg -i nxlog-ce_2.9.1347_ubuntu_1404_amd64.deb  2>&1 | grep 'is not installe' | awk '{print $2}' | xargs -n echo apt-get -y install
+dpkg -i nxlog-ce_2.9.1347_ubuntu_1404_amd64.deb  2>&1 | grep 'is not installe' | awk '{print $2}' | xargs echo apt-get -y install
+apt-get -y install libapr1 libdbi1 libperl5.18
+dpkg -i nxlog-ce_2.9.1347_ubuntu_1404_amd64.deb  
+hs
+[root@ubuntu-14:~(master)]$ 
+
+
 
 
 
