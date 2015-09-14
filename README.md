@@ -1,3 +1,12 @@
+```
+vagrant ssh -c 'cd /vagrant && sudo sh -x test.sh'
+```
+
+
+
+
+
+
 # Reminder to taylor how to get this running
 
 I'm learning how this all works and I need emacs on this vagrant ubunutu
