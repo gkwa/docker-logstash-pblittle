@@ -11,11 +11,12 @@ make
 /opt/logstash/conf.d
 ```
 
+```
 http://nxlog.org/products/nxlog-community-edition/download
 wget -nc http://nxlog.org/system/files/products/files/1/nxlog-ce_2.9.1347_ubuntu_1404_amd64.deb
 dpkg -i nxlog-ce_2.9.1347_ubuntu_1404_amd64.deb  2>&1 | grep 'is not installe' | awk '{print $2}' | xargs echo apt-get -y install | sh -x -
 dpkg -i nxlog-ce_2.9.1347_ubuntu_1404_amd64.deb
-
+```
 
 
 
