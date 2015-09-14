@@ -3,6 +3,10 @@ make setup
 make
 ```
 
+```
+/home/Administrator/pdev/docker-logstash-pblittle/1.4
+/vagrant
+```
 
 
 
