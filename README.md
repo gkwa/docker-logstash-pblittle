@@ -6,6 +6,9 @@ make
 ```
 /home/Administrator/pdev/docker-logstash-pblittle/1.4
 /vagrant
+
+/opt/logstash/conf.d/logstash-test.conf
+/opt/logstash/conf.d
 ```
 
 
